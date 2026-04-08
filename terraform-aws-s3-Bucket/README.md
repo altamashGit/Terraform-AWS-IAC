@@ -8,14 +8,18 @@ I built this project to understand how Infrastructure as Code (IaC) actually wor
 ---
 
 ## Architecture diagram
- <image >
+
+<img width="713" height="455" alt="Architecture" src="https://github.com/user-attachments/assets/dfd20a5b-e706-4ccd-ac73-6c5588883c5f" />
+
 
 ---
-🛠️ Tech Stack I Used  
+
+### Tech Stack I Used 
 Cloud Provider: AWS  
 IaC Tool: Terraform (v1.x)  
 Language: HCL (HashiCorp Configuration Language)  
 Service: AWS S3  
+
 ---
 
  How to Get Started
@@ -55,7 +59,8 @@ provider "aws" {
 ```
 ---
 ### Understand Blocks in Terraform
-    ---> Blocks are the main building units in Terraform configuration.
+
+ --> Blocks are the main building units in Terraform configuration.
 
 They define different parts of your infrastructure like provider, resources, variables, etc  
 
@@ -69,10 +74,12 @@ IN Simple words: A block is just a section of code with a specific purpose.
 
 ---
 
-### Terraform Resource (S3 Bucket)
-    ---> This block is used to create an S3 bucket in AWS
+---
+### Terraform Resource (S3 Bucket) 
+
+  --> This block is used to create an S3 bucket in AWS
     
-    ```.tf
+    ```bash
     resource "aws_s3_bucket" "demo_project_bucket" {
          bucket = "demo-with-project-bucket-terraform"
           tags = {
@@ -86,7 +93,7 @@ IN Simple words: A block is just a section of code with a specific purpose.
 ---
 
  ### Terraform init
-  ---> terraform init is similar to git init.
+  --> terraform init is similar to git init.
 
 When you run it, Terraform initializes your working directory and prepares it to manage infrastructure.
 
@@ -94,12 +101,13 @@ When you run it, Terraform initializes your working directory and prepares it to
   .  Sets up the backend for storing state  
   .  Prepares the environment for Terraform commands
 
-<image-init>
+<img width="961" height="546" alt="init" src="https://github.com/user-attachments/assets/8a123539-8123-4d64-a970-ba667dda146e" />
+
 
 ---
 
 ### Terraform validate
-  ---> terraform validate is used to check whether your Terraform configuration files are syntactically correct and valid.
+  --> terraform validate is used to check whether your Terraform configuration files are syntactically correct and valid.
 
 After writing your .tf files, you run this command to make sure there are no errors before applying changes.
 
@@ -107,11 +115,12 @@ After writing your .tf files, you run this command to make sure there are no err
   . Verifies configuration structure  
   . Shows errors with suggestions if something is wrong
 
-<image-validate>
+<img width="414" height="75" alt="validate" src="https://github.com/user-attachments/assets/8d5b7308-81a1-44e7-9a86-c7cff18ea3aa" />
+
 ---
 
 ### Terraform plan
-   ---> terraform plan is used to preview what changes Terraform will make before actually applying them.
+   --> terraform plan is used to preview what changes Terraform will make before actually applying them.
 
 It compares your .tf configuration with the current state and shows:
 
@@ -121,16 +130,18 @@ It compares your .tf configuration with the current state and shows:
 
 If there are any issues (like deprecated or incorrect configurations), it will show errors or warnings.
 
-<image-plan>
+<img width="592" height="879" alt="plan" src="https://github.com/user-attachments/assets/1ea5c770-6fc2-48a7-9676-aad932464d93" />
+
 ---
 
 ### Terraform Apply
-    ---> terraform apply is used to create or update infrastructure based on your .tf files.
+   --> terraform apply is used to create or update infrastructure based on your .tf files.
    . It executes the changes shown in terraform plan  
    . Creates, updates, or deletes resources  
    . Asks for confirmation before applying
 
-<image-plan>
+<img width="818" height="856" alt="apply" src="https://github.com/user-attachments/assets/ef604200-f8a7-4c01-9571-f3e1bf6df248" />
+
 
 ---
 
@@ -138,7 +149,10 @@ If there are any issues (like deprecated or incorrect configurations), it will s
    1. Go to S3 service
    2. Check for bucket name: demo-with-project-bucket-terraform
    3. Verify tags and details
-<bucket-image>
+
+<img width="1920" height="1032" alt="bucket-image" src="https://github.com/user-attachments/assets/b16376f7-6319-4dc5-801f-5e6c92ccfd17" />
+
+
 <tag images>
 
 ---
@@ -157,4 +171,8 @@ What It Does
     .   Cleans up your infrastructure
 
 You’ll be asked for confirmation → type yes
+
+<img width="666" height="911" alt="Screenshot 2026-04-05 133559" src="https://github.com/user-attachments/assets/ce934ae9-f849-4f8f-91e6-864cc82f65dc" />
+
+
 ---
