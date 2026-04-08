@@ -21,7 +21,7 @@ Each project in this repository is structured to provide both practical implemen
 Explore my Terraform projects below. Each project includes source code, documentation, and real deployment evidence.
 
 <details>
-  <summary><b>📂 Click to View Projects (Serial No. 1–2)</b></summary>
+  <summary><b>📂 Click to View Projects (Serial No. 1–5)</b></summary>
 
   <br/>
 
@@ -29,7 +29,7 @@ Explore my Terraform projects below. Each project includes source code, document
   |:---:|:------------|:------------|:----:|
   | 01 | **AWS S3 Bucket Deployment** | Provisioning an S3 bucket with tagging and best practices. | [View Project 🔗](./terraform-aws-s3-Bucket) |
   | 02 | **Remote Backend & State Locking** | Secure Terraform state using S3 and DynamoDB locking. | [View Project 🔗](./terraform-aws-remote-backend) |
-
+| 03 | **EC2 Nginx Web Server Setup** | Deploying a Linux EC2 instance, configuring Security Groups, and using `user_data` to automate Nginx installation. | [View Project 🔗](./terraform-aws-ec2-nginx-setup) |
 </details>
 
 ---
