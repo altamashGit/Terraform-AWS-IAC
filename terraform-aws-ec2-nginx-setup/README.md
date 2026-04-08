@@ -12,7 +12,9 @@ deployed instance serves a basic web page over HTTP (Port 80).
 
 ---
 ## Architecture
-<ec2-nginx-architecture>
+
+<img width="1491" height="757" alt="architecture" src="https://github.com/user-attachments/assets/1ffb7736-6940-4dcd-84f3-a29a5498f245" />
+
 
 ---
 
@@ -224,11 +226,13 @@ terraform plan
 ```bash
  terraform apply
  ```
- <apply-image>
+<img width="1109" height="722" alt="apply" src="https://github.com/user-attachments/assets/b5f3a630-b3e1-4712-ad13-d434998cf14a" />
+
 
 ### Ec2 console
 
- <ec2-console>
+<img width="1706" height="817" alt="ec2-console" src="https://github.com/user-attachments/assets/fde47fd1-dbb9-442f-a77d-da08d39d08a0" />
+
 ---
 
 ## Access the Application
@@ -239,7 +243,7 @@ terraform plan
 terraform output
 ```  
 
-<output image>
+<img width="848" height="137" alt="output" src="https://github.com/user-attachments/assets/c70c5df9-e88b-495b-a339-1298dabec057" />
 
 ---
  - Open in browser:  
@@ -248,7 +252,10 @@ terraform output
 http://<public-ip>  
 ```
 ---
-<browser-image>
+
+<img width="1860" height="751" alt="browser" src="https://github.com/user-attachments/assets/0b43475f-8d7b-4422-bc2d-d01214926a36" />
+
+
 ### Result
  - EC2 instance running on AWS  
  - Nginx installed automatically  
@@ -259,8 +266,12 @@ http://<public-ip>
 
 To destroy resources:
 
+```bash
 terraform destroy
-<destroy-iamge>
+```
+
+<img width="1145" height="748" alt="destroy" src="https://github.com/user-attachments/assets/da530110-1fb7-4fee-a964-df19ebaac673" />
+
 ---
 
 ---
