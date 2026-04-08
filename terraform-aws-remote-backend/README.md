@@ -6,7 +6,8 @@ This project is focused on managing Terraform state remotely instead of keeping 
 
 ---
 ## Project Architecture Diagram
-<pro-diagram>
+
+<img width="711" height="395" alt="pro-diagram" src="https://github.com/user-attachments/assets/4821e373-340e-47f2-961c-74cf0a1ebdf0" />
 
 ---
 ### Project Objective
@@ -35,7 +36,7 @@ In this project, I moved Terraform state from local storage to a remote backend 
 
 ---
 
-<state-Diagram>
+<img width="846" height="522" alt="state-Diagram" src="https://github.com/user-attachments/assets/1d6600c1-2a4a-4d12-b1e2-145e18f21db2" />
 
 ## How Terraform Matches Desired vs Actual State
   Terraform compares two main things:
@@ -181,15 +182,21 @@ resource "aws_dynamodb_table" "terraform_locks" {
 terraform init
 terraform apply
 ```
-<backen-apply-image>
+<img width="850" height="473" alt="backend-apply" src="https://github.com/user-attachments/assets/d69b09c2-b342-4474-bff6-38133ba605d8" />
 ---
 
 ---
 ## verify on console
- S3 is created
- <s3-first-image>
- DynamoDb is creatd
- <DynamoDb-first-iamge> 
+ 
+ ### S3 is created
+ 
+<img width="1850" height="547" alt="s3-first" src="https://github.com/user-attachments/assets/aa27766c-7094-4398-a9ed-109180dab75e" />
+
+   
+### DynamoDb is creatd
+ 
+<img width="1909" height="490" alt="dynamoDb-first" src="https://github.com/user-attachments/assets/a7e3ae67-7600-4307-bd93-eacdc5f02014" />
+
  ---
 
 ## Step 3: Configure Remote Backend
@@ -296,13 +303,16 @@ preview & apply
 terraform plan
 terraform apply
 ```
-<main-apply-image>
+<img width="801" height="862" alt="main-apply" src="https://github.com/user-attachments/assets/84c572f9-692a-4eda-a7fb-043ba83cc12b" />
+
 
 ---
 
 ## From Console Verify Instance
  
- <ec2-verify-iamge>
+ <img width="1903" height="792" alt="ec2-verify" src="https://github.com/user-attachments/assets/f11ac1ff-24f7-442b-af34-e3acf052b93f" />
+
+---
 
 Note Public IP
 now ssh to ec2 instance
@@ -311,7 +321,8 @@ now ssh to ec2 instance
 ssh -i "C:/users/altam/.ssh/id_ed25519" ubuntu@13.233.255.64
 ```
 
-<ssh-image>
+<img width="783" height="759" alt="ssh" src="https://github.com/user-attachments/assets/0a9d8e6c-98ee-497b-b646-47219aa6edea" />
+
 ---
 ## Virify that your terrraform state file is in S3 bucket.
 
@@ -327,15 +338,21 @@ ssh -i "C:/users/altam/.ssh/id_ed25519" ubuntu@13.233.255.64
 ```
 State file path `dev/backend/terraform.tfstate`
 
-<s3-state-file-image>
-Veify here
+
+### Veify here
+
+<img width="1919" height="729" alt="s3-state-file" src="https://github.com/user-attachments/assets/2f97f22a-1a77-42f7-b721-923e8139b7a1" />  
+
 ---
 ## Clean UP
 delete your ec2
 ```bash
 terraform destroy
 ```
-<ec2 deleted>
+
+<img width="851" height="826" alt="ec2-deleted" src="https://github.com/user-attachments/assets/afd407ab-9d60-46a8-9224-a6526ebfb659" />
+
+
 
 move to s3 bucket terraform file
 ```bash
@@ -345,7 +362,8 @@ Use this command
 ```hcl
 terraform destroy
 ```
-<db-deleted>
+<img width="1055" height="743" alt="db-deleted" src="https://github.com/user-attachments/assets/ce4b1ce2-9072-4650-9a54-de6cc59f547c" />
+
 ---
 
 Because Bucket is not empty so bucket will not delete
@@ -358,7 +376,6 @@ Then
 ```bash
 aws s3api delete-bucket --bucket project-backend-terraform-statefiles231-bucket
 ```
-<bucket-delet-image>
 
 ---
 
