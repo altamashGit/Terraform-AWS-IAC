@@ -30,13 +30,15 @@ deployed instance serves a basic web page over HTTP (Port 80).
 ├── provider.tf      # AWS provider config   
 └── README.md        # Project documentation
 ```
----
+--- 
+
 ## Tech Stack (Short)
-AWS (EC2) – Cloud infrastructure
-Terraform – Infrastructure as Code
-Nginx – Web server (Port 80)
-Bash (User Data) – Instance setup automation
-Linux (Ubuntu) – Operating system
+
+AWS (EC2) – Cloud infrastructure  
+Terraform – Infrastructure as Code  
+Nginx – Web server (Port 80)  
+Bash (User Data) – Instance setup automation  
+Linux (Ubuntu) – Operating system  
 Terraform CLI – Deployment tool
 ---
 
