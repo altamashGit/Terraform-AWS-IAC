@@ -19,14 +19,17 @@ deployed instance serves a basic web page over HTTP (Port 80).
 ---
 
 ---
-Project Structure
+
+## Project Structure
+
+```bash
 .
 ├── main.tf          # Main Terraform configuration  
 ├── variables.tf     # Input variables  
 ├── outputs.tf       # Outputs (e.g., public IP)  
 ├── provider.tf      # AWS provider config   
 └── README.md        # Project documentation
-
+```
 ---
 ## Tech Stack (Short)
 AWS (EC2) – Cloud infrastructure
