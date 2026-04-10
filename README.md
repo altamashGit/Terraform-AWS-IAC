@@ -30,6 +30,7 @@ Explore my Terraform projects below. Each project includes source code, document
   | 01 | **AWS S3 Bucket Deployment** | Provisioning an S3 bucket with tagging and best practices. | [View Project 🔗](./terraform-aws-s3-Bucket) |
   | 02 | **Remote Backend & State Locking** | Secure Terraform state using S3 and DynamoDB locking. | [View Project 🔗](./terraform-aws-remote-backend) |
 | 03 | **EC2 Nginx Web Server Setup** | Deploying a Linux EC2 instance, configuring Security Groups, and using `user_data` to automate Nginx installation. | [View Project 🔗](./terraform-aws-ec2-nginx-setup) |
+| 04 | **EC2 Setup using Terraform Data Sources** | Dynamically fetching the latest Amazon Linux AMI using `data` blocks to ensure infrastructure is always up-to-date and portable. | [View Project 🔗](./terraform-aws-ec2-setup-DataSource) |
 </details>
 
 ---
@@ -51,7 +52,52 @@ Each project directory contains a dedicated `README.md` with:
 - Architecture diagrams  
 - Step-by-step execution guide  
 - Deployment screenshots  
-- Key learnings and insights  
+- Key learnings and insights
+
+---
+
+## 🖼️ Architecture & Project Spotlights
+> [!TIP]
+> This section provides a visual deep-dive into the infrastructure design for each implementation.
+
+### 🔹 Project 04: EC2 Setup using Data Sources
+**Overview:** Demonstrates environment-agnostic code. By using the `aws_ami` Data Source, the configuration automatically fetches the latest Amazon Linux 2 AMI ID, ensuring the infrastructure is always patched and up-to-date.
+
+**Architecture Diagram:**
+
+<img width="1038" height="692" alt="architecture-image" src="https://github.com/user-attachments/assets/2efb18a7-73e2-4eca-8e3e-05aebc500b78" />
+
+
+---
+
+### 🔹 Project 03: EC2 Nginx Web Server
+**Overview:** Full automation of the web server layer. Includes the creation of Security Groups for web traffic and uses a `user_data` script to bootstrap Nginx upon launch.
+
+**Architecture Diagram:**
+
+<img width="1491" height="757" alt="architecture" src="https://github.com/user-attachments/assets/fe80d7d2-bf5d-44ce-b43e-4af1bdd6b9e7" />
+
+---
+
+### 🔹 Project 02: Remote Backend & State Locking
+**Overview:** Focuses on Team Collaboration. By offloading the state file to S3 and using DynamoDB for locking, this prevents state corruption during concurrent updates.
+
+**Architecture Diagram:**
+
+<img width="711" height="395" alt="pro-diagram" src="https://github.com/user-attachments/assets/94a753f0-9020-4612-bff7-61f734cf12b0" />
+
+## How terrafrom State Behave
+
+<img width="846" height="522" alt="state-Diagram" src="https://github.com/user-attachments/assets/7d7c32b5-d62c-4580-be3c-234d4d84698d" />
+
+---
+
+### 🔹 Project 01: AWS S3 Bucket Deployment
+**Overview:** The foundation of cloud storage. This project implements a secure S3 bucket with versioning and public access blocks.
+
+**Architecture Diagram:**
+
+<img width="713" height="455" alt="Architecture" src="https://github.com/user-attachments/assets/46051ee2-cc75-443b-bd00-37a36e6d21ac" />
 
 ---
 
