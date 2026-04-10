@@ -14,7 +14,9 @@ Faster deployment is needed.
 
 ---
 # Architecture Flow
-<architecture image>
+
+<img width="1038" height="692" alt="architecture-image" src="https://github.com/user-attachments/assets/95217d91-99d8-4ed9-89dc-6034978c7845" />
+
 ---
 
 ## Tech Stack  
@@ -40,11 +42,11 @@ Faster deployment is needed.
 ##  Custom AMI from Snapshot
 In this project, instead of using a generic public AMI, I am using a custom AMI created from my own snapshot.
 
-<ami_image>
+<img width="1738" height="844" alt="ami-image" src="https://github.com/user-attachments/assets/ddc6362d-dc8e-47ea-b7f1-2c660db75860" />
+
 
 ---
 1. Custom AMI via Data Source  
-<ami-image>
 
 Instead of using a public AMI, we fetch a custom AMI created from a snapshot:
 
@@ -83,6 +85,7 @@ Your EC2 will launch with:
  . Pre-installed software  
  . Pre-configured environment  
  . Faster startup time  
+ 
 ---
 Workflow (Step-by-Step): 
 1. DevOps Engineer runs Terraform  
@@ -102,11 +105,13 @@ terraform init
 terraform plan
 terraform apply
 ```
-<apply-iamge>
+<img width="1074" height="702" alt="apply-iamge" src="https://github.com/user-attachments/assets/b3c7520c-7eda-4a8d-ba13-ac36368981a3" />
+
 ---
 ## Verify ami
 
-<console-output>
+<img width="1735" height="835" alt="console-output" src="https://github.com/user-attachments/assets/28028a5a-2fda-4df4-8720-6ba0a5f2a7df" />
+
 ---
 
 ---
@@ -117,13 +122,24 @@ terraform apply
 ```bash
 terraform destroy
 ```
-<destroy-image>
+<img width="1185" height="699" alt="destroy" src="https://github.com/user-attachments/assets/9e4c0310-d05d-465e-9209-6e8febe48582" />
+
 
 ---
+
 Learning Outcome
 
-✔ Understanding Terraform Data Sources
-✔ AWS Infrastructure provisioning
-✔ Clean DevOps workflow
-✔ Real-world Terraform usage
+✔ Understanding Terraform Data Sources  
+✔ AWS Infrastructure provisioning  
+✔ Clean DevOps workflow  
+✔ Real-world Terraform usage  
+
 ---
+
+🏁 Wrapping Up
+
+This project may be small, but every line of Terraform brings me closer to mastering Infrastructure as Code.
+
+Until the next deployment 🚀
+
+Made with ❤️ using Terraform by Altamash
