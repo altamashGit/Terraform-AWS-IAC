@@ -32,7 +32,7 @@ Explore my Terraform projects below. Each project includes source code, document
 | 03 | **EC2 Nginx Web Server Setup** | Deploying a Linux EC2 instance, configuring Security Groups, and using `user_data` to automate Nginx installation. | [View Project 🔗](./terraform-aws-ec2-nginx-setup) |
 | 04 | **EC2 Setup using Terraform Data Sources** | Dynamically fetching the latest Amazon Linux AMI using `data` blocks to ensure infrastructure is always up-to-date and portable. | [View Project 🔗](./terraform-aws-ec2-setup-DataSource) |
 </details>
-
+| 05 | S3 Static Website with CloudFront & Route53 | Deploying a static website on S3, secured with CloudFront (HTTPS), and accessible via a custom domain using Route53. | [View Project 🔗](./terraform-aws-s3-static-website-cloudfront-route53) |
 ---
 
 ## 🌱 Learning Goals & Growth Focus  
