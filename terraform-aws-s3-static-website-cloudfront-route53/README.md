@@ -15,13 +15,16 @@ The infrastructure is fully automated using Infrastructure as Code (IaC).
 ---
 
 ##  Architecture
-<image-1>
+
+<img width="1777" height="644" alt="image-1" src="https://github.com/user-attachments/assets/ce95546e-70dc-4006-8001-342d0faf3ebf" />
+
 
 ---
 
 Architecture Flow
 
-<flow-2>
+<img width="1448" height="1086" alt="flow-2" src="https://github.com/user-attachments/assets/e597eaee-6df3-4313-81d2-a830a8442ac9" />
+
 
 ---
 
@@ -384,7 +387,8 @@ terraform validate
 ```bash
 terraform plan
 ```
-<iamge-plan>
+<img width="1430" height="748" alt="plan" src="https://github.com/user-attachments/assets/fb0f9091-1c45-4cf9-b63e-8b52398d0c90" />
+
 
 4. Apply Changes
 
@@ -392,7 +396,8 @@ terraform plan
 terraform apply
 ```
 
-<image-apply>
+<img width="1142" height="885" alt="apply" src="https://github.com/user-attachments/assets/278f8c1f-4305-40dc-af50-974ddb21dfd1" />
+
 
 Note : -- *If it take 4 to 5 minutes to creates infrastructure wait for it. It's normal not in your configuraion misktes*
 
@@ -400,25 +405,34 @@ Note : -- *If it take 4 to 5 minutes to creates infrastructure wait for it. It's
 
 ### Console Check:
 
- 1. S3 Bucket
+ ### 1. S3 Bucket
  
- <image-s3-bucket-object>
+ <img width="1738" height="838" alt="s3-bucket-object" src="https://github.com/user-attachments/assets/9f03c973-a9e2-425b-bfa1-50fb67ec718c" />
 
- 2. S3 Bucket Policy
 
- <image- bucket-policy> 
+ ### 2. S3 Bucket Policy
 
- 3. AWS Certificate manager
 
-  <image- aws-ACM>
+<img width="1725" height="858" alt="bucket-policy" src="https://github.com/user-attachments/assets/d295af28-2220-4640-ac82-874896a379c7" />
 
- 5. Cloudfront
 
-  <image-Cloud-front>  
+ ### 4. AWS Certificate manager
 
- 6. Route53
 
- <image-route53>
+<img width="1651" height="491" alt="acm" src="https://github.com/user-attachments/assets/458c1414-d59e-41c8-8ca3-79e22a72f1da" />
+
+
+ ### 5. Cloudfront
+
+
+<img width="1735" height="826" alt="cloud-front" src="https://github.com/user-attachments/assets/74f17f6c-315a-4c5e-8d7c-34971d742219" />
+
+
+ ### 6. Route53
+
+
+<img width="1096" height="713" alt="route-53" src="https://github.com/user-attachments/assets/c4eb2105-aec8-4609-b8c3-b65b7fe63c2f" />
+
 
 ---
 
@@ -439,7 +453,9 @@ Example:
 ```bash
 https://project.altamash.cloud
 ```
-<image-browser>
+
+<img width="1906" height="984" alt="browser" src="https://github.com/user-attachments/assets/886eef46-a12e-47f7-8164-039cf0197ba4" />
+
 
 
 ---
@@ -447,7 +463,12 @@ Cleanup
 
 To delete all resources:
 
+```bash
 terraform destroy -auto-approve
+```
+
+<img width="1134" height="929" alt="destory" src="https://github.com/user-attachments/assets/185b8e02-688a-44c1-8ced-9b2f1baecd8d" />
+
 ---
 
 ## Learning Outcomes  
