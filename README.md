@@ -21,7 +21,7 @@ Each project in this repository is structured to provide both practical implemen
 Explore my Terraform projects below. Each project includes source code, documentation, and real deployment evidence.
 
 <details>
-  <summary><b>📂 Click to View Projects (Serial No. 1–5)</b></summary>
+  <summary><h2>📂<b> Click to View Projects (Serial No. 1–5)<b></h2></summary>
 
   <br/>
 
@@ -31,8 +31,8 @@ Explore my Terraform projects below. Each project includes source code, document
   | 02 | **Remote Backend & State Locking** | Secure Terraform state using S3 and DynamoDB locking. | [View Project 🔗](./terraform-aws-remote-backend) |
 | 03 | **EC2 Nginx Web Server Setup** | Deploying a Linux EC2 instance, configuring Security Groups, and using `user_data` to automate Nginx installation. | [View Project 🔗](./terraform-aws-ec2-nginx-setup) |
 | 04 | **EC2 Setup using Terraform Data Sources** | Dynamically fetching the latest Amazon Linux AMI using `data` blocks to ensure infrastructure is always up-to-date and portable. | [View Project 🔗](./terraform-aws-ec2-setup-DataSource) |
-</details>
 | 05 | S3 Static Website with CloudFront & Route53 | Deploying a static website on S3, secured with CloudFront (HTTPS), and accessible via a custom domain using Route53. | [View Project 🔗](./terraform-aws-s3-static-website-cloudfront-route53) |
+</details>
 ---
 
 ## 🌱 Learning Goals & Growth Focus  
@@ -59,6 +59,13 @@ Each project directory contains a dedicated `README.md` with:
 ## 🖼️ Architecture & Project Spotlights
 > [!TIP]
 > This section provides a visual deep-dive into the infrastructure design for each implementation.
+
+### 🔹 Project 05: S3 Static Website with CloudFront & Route53
+
+**Overview:** Upgrades basic S3 hosting into a **production-ready, global web application**. It uses **CloudFront** to cache content at edge locations for fast, secure HTTPS delivery, and **Route53** to map a custom domain. The result is a serverless, scalable, and low-latency static website with enterprise-grade security.
+
+<img width="1777" height="644" alt="image-1" src="https://github.com/user-attachments/assets/16afb599-25fd-4d59-924f-1a220f7dfbf4" />
+
 
 ### 🔹 Project 04: EC2 Setup using Data Sources
 **Overview:** Demonstrates environment-agnostic code. By using the `aws_ami` Data Source, the configuration automatically fetches the latest Amazon Linux 2 AMI ID, ensuring the infrastructure is always patched and up-to-date.
